@@ -220,7 +220,7 @@ function Bullet() {
 		this.alive = true;
 		this.CentiInShipZone = centiInShipZone; 
 		if(this.CentiInShipZone){
-			this.bulletImage.src = "imgs/bulletc.png";
+			this.bulletImage.src = "imgs/bullet_c.png";
 		}else{
 			this.bulletImage.src = "imgs/bullet.png";
 		}
