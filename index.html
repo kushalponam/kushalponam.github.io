@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>Kushal Ponnam</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Files/w3.css">
+<link rel="stylesheet" href="Files/theme.css">
+<body>
+
+<div id="header" class="w3-container w3-theme  w3-card-2">
+  <h1 >Kushal Ponnam</h1> 
+  <p>Game Developer</p> 
+  <!-- <span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>-->
+</div>
+ 
+<nav class="w3-topnav w3-theme-l3 w3-card-2 w3-center" style="display:block">
+  <!--<a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-large" align="right"> &times;</a>-->
+  <!--<a href="#"><i class="fa fa-home"></i></a>-->
+  <a href="javascript:void(0)" onclick="About()">About</a>
+  <a href="javascript:void(0)" onclick="Games()">Games</a>
+  <a href="javascript:void(0)" onclick="RayTracing()">RayTracing</a>
+  <a href="javascript:void(0)" onclick="Contact()">Contact</a>
+</nav>
+
+<iframe id="main" src="Files/Games.html" class="w3-row-padding" width="100%" height="500" style="border:none">
+
+</iframe>
+
+<script>
+function w3_open() {
+    document.getElementById("main").style.marginLeft = "25%"
+	 document.getElementById("header").style.marginLeft = "25%"
+	document.getElementById("header").style.width = "100%"
+    document.getElementsByClassName("w3-sidenav")[0].style.width = "25%";
+	document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+}
+function w3_close() {
+     document.getElementById("main").style.marginLeft = "0%";
+	 document.getElementById("header").style.marginLeft = "0%"
+	 document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+}
+function About(){
+    document.getElementById("main").src="Files/About.html";
+}
+function Games(){
+    document.getElementById("main").src="Files/Games.html";
+}
+function RayTracing(){
+    document.getElementById("main").src="Files/RayTracing.html";
+}
+function Contact(){
+    document.getElementById("main").src="Files/Contact.html";
+}
+
+</script>
+
+</body>
+</html>
